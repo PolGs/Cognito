@@ -66,12 +66,9 @@ GPIO.add_event_detect(TILT, GPIO.FALLING, callback=outFunction, bouncetime = 100
 while True:
     
     #---get distance for erach sensor
-    #distance1 = getcm(TRIG1,ECHO1)
-    #print('Distance 1: {} cm'.format(int(distance1)))
-    #time.sleep(1)
+    distance1 = getcm(TRIG1,ECHO1)
+    print('Distance 1: {} cm'.format(int(distance1)))
     
-    
-    time.sleep(1)
     
     #---- detect fall -----
     oldn = n
@@ -89,6 +86,10 @@ while True:
     with open ('/var/www/html/data1.csv','a') as datafile:
         
         datafile.write(str(falls) +  "\n")  
+        
+    with open ('/var/www/html/datau1.csv','a') as datafile:
+        
+        datafile.write(str(int(distance1)) +  "\n")      
  
     time.sleep(1)
  

@@ -1,9 +1,12 @@
-# Cognito
+# COGNITO
 Cognitive Advisory for Blind and Deaf People
+
+# Code:
 #### MAIN PYTHON SCRIPT: sc003.py
 #### WEBAPP: Web folder
 #### STM Script: STM32.txt
-# Images
+
+# Images:
 ## Web Service
 ![image](https://user-images.githubusercontent.com/19478700/166134211-9a30633a-07d3-41e9-9512-0d63f564f0dc.png)
 ![image](https://user-images.githubusercontent.com/19478700/166341205-0eed8214-8601-46f2-b32c-f3c8983d7a7f.png)
